@@ -1,0 +1,390 @@
+
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f5f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+    background-color: #4E2D1E;
+    color: white;
+    padding: 18px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #D4AF37;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #D4AF37;
+}
+
+
+/* HOMEPAGE HERO */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero-content h2 {
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+
+/* REGISTER BUTTON */
+
+.register-btn {
+    display: inline-block;
+    background-color: #D4AF37;
+    color: #4E2D1E;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 14px 28px;
+    border-radius: 5px;
+}
+
+.register-btn:hover {
+    background-color: white;
+    color: #4E2D1E;
+}
+
+
+/* OVERVIEW SECTION */
+
+.overview {
+    padding: 60px 50px;
+    text-align: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.overview h2,
+.highlights h2,
+.speakers-section h2,
+.additional-speakers h2,
+.call-papers h2 {
+    color: #4E2D1E;
+    font-size: 29px;
+    margin-bottom: 20px;
+}
+
+.overview p {
+    margin-bottom: 18px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+
+/* KEY HIGHLIGHTS */
+
+.highlights {
+    padding: 50px 30px;
+    text-align: center;
+    background-color: #eee5d8;
+}
+
+.highlight-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.highlight-card {
+    background-color: white;
+    width: 220px;
+    padding: 30px 20px;
+    border-bottom: 5px solid #4E2D1E;
+    border-radius: 6px;
+}
+
+.highlight-card h3 {
+    color: #D4AF37;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.highlight-card p {
+    font-weight: bold;
+    color: #4E2D1E;
+}
+
+
+/* PAGE HEADINGS */
+
+.page-heading {
+    background-color: #eee5d8;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.page-heading h1 {
+    color: #4E2D1E;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+
+/* PROGRAMME AND OTHER TABLES */
+
+.programme-section,
+.additional-speakers,
+.call-papers {
+    padding: 45px 30px;
+}
+
+.expo-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.expo-table th {
+    background-color: #4E2D1E;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+.expo-table td {
+    padding: 13px;
+    border: 1px solid #ddd;
+}
+
+.expo-table tbody tr:nth-child(even) {
+    background-color: #eee5d8;
+}
+
+.expo-table tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+
+/* PROGRAMME DAY HEADINGS */
+
+.expo-table .day-heading td {
+    background-color: #D4AF37;
+    color: #4E2D1E;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+}
+
+
+/* FEATURED SPEAKERS */
+
+.speakers-section {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.speaker-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.speaker-card {
+    width: calc(50% - 20px);
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.speaker-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.speaker-card h3 {
+    color: #4E2D1E;
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.speaker-card h4 {
+    color: #D4AF37;
+    margin-bottom: 5px;
+}
+
+.speaker-card p {
+    margin-bottom: 12px;
+}
+
+
+/* ADDITIONAL SPEAKERS */
+
+.additional-speakers h2 {
+    text-align: center;
+}
+
+
+/* CALL FOR PAPERS */
+
+.call-papers {
+    background-color: #eee5d8;
+}
+
+.call-papers h2,
+.call-papers h3 {
+    text-align: center;
+    color: #4E2D1E;
+    margin-bottom: 20px;
+}
+
+.call-papers p {
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+
+/* PLACEHOLDER PAGE */
+
+.placeholder {
+    min-height: 450px;
+    padding: 80px 25px;
+    text-align: center;
+}
+
+.placeholder h1 {
+    color: #4E2D1E;
+    margin-bottom: 20px;
+}
+
+.placeholder p {
+    margin-bottom: 20px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #4E2D1E;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 30px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .navbar ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 27px;
+    }
+
+    .hero-content h2 {
+        font-size: 17px;
+    }
+
+    .overview {
+        padding: 35px 20px;
+    }
+
+    .highlight-card {
+        width: 100%;
+    }
+
+    .speaker-card {
+        width: 100%;
+    }
+
+    .programme-section,
+    .additional-speakers,
+    .call-papers {
+        overflow-x: auto;
+        padding: 25px 15px;
+    }
+
+    .expo-table {
+        min-width: 650px;
+    }
+
+}
